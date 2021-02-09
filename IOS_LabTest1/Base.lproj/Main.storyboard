@@ -28,6 +28,9 @@
                                 <state key="normal" title="DRAW">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="drawBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8z-Hf-grE"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="EPo-WC-vvh">
                                 <rect key="frame" x="0.0" y="101" width="404" height="290"/>
@@ -118,6 +121,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Lj-ev-DFf"/>
+                    <connections>
+                        <outlet property="fifthNuber" destination="TP0-uU-w3o" id="nwF-cr-Fbm"/>
+                        <outlet property="fouthNumber" destination="3hq-D5-S84" id="m9z-kx-WMZ"/>
+                        <outlet property="fristNumber" destination="nM1-Qv-SXQ" id="cpG-Xl-SpE"/>
+                        <outlet property="secondNumber" destination="j8J-2G-Xdf" id="osE-RR-83c"/>
+                        <outlet property="sixtNumber" destination="Mpr-yf-aye" id="QZU-5G-Hb8"/>
+                        <outlet property="thirdNumber" destination="KMc-VB-yG1" id="zlL-e4-UgM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
