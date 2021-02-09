@@ -35,10 +35,31 @@ class MainViewController: UIViewController {
         createNumbers()
     }
     
+    
+    @IBAction func clearBtn(_ sender: UIButton)
+    {
+        
+    fristNumber.text = String("N1")
+    secondNumber.text = String("N2")
+    thirdNumber.text = String("N3")
+    fouthNumber.text = String("N4")
+    fifthNuber.text = String("N5")
+    sixtNumber.text = String("N6")
+     
+        
+    }
+    
     func createNumbers(){
         randomArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: numbers) as! [Int]
         fristNumber.text = String(randomArray[0])
+        secondNumber.text = String(randomArray[1])
+        thirdNumber.text = String(randomArray[2])
+        fouthNumber.text = String(randomArray[3])
+        fifthNuber.text = String(randomArray[4])
+        sixtNumber.text = String(randomArray[5])
     }
+    
+   
     
 
 }
